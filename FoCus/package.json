@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "concurrently": "^9.1.2",
     "electron": "^35.0.0",
     "electron-builder": "^25.1.8",

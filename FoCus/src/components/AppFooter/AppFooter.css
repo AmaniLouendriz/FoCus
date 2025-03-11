@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #D9D9D9;
+    color: black;
+    padding: .25rem;
+    text-align: center;
+    margin-top: auto;
+}
+
+.copyright-footer {
+    color: black;
+}
+
+p.copyright {
+    font-size:x-small;
+    color: black;
+}
