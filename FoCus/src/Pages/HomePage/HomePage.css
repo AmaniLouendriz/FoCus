@@ -1,0 +1,12 @@
+.greetingUser {
+    padding: 8px;
+}
+
+.homeDiv {
+    background-color: #E8DEDE;
+    flex: 1;
+}
+
+.titlePage {
+    text-align: center;
+}
