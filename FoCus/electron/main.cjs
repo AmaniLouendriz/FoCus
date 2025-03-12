@@ -12,7 +12,9 @@ function createWindow() {
         height: 600,
         webPreferences: {
             nodeIntegration: true
-        }
+        },
+        icon: path.join(__dirname, '../public/logo.png') // Change the icon path here
+
     });
 
     win.loadFile(path.join(__dirname, '../dist/index.html')); // Loads the React build
