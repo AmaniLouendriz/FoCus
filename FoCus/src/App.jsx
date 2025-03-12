@@ -22,7 +22,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<AppShell />}>
-          <Route index element={<HomePage />} />
+          <Route index element={<HomePage />}/>
         </Route>
       </Routes>
     </Router>

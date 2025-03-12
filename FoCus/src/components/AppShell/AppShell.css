@@ -8,6 +8,7 @@
 body {
     align-items :start;
     justify-items: start;
+    overflow-x: hidden;
 
 }
 
