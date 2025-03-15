@@ -1,0 +1,9 @@
+.newTaskDiv {
+    background-color: #E8DEDE;
+    flex: 1;
+}
+
+.container-Total {
+    border: 2px solid black;
+    border-radius: 10px;
+}

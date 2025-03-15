@@ -3,6 +3,7 @@ import './App.css'
 import {createRoutesFromElements, RouterProvider} from "react-router-dom"
 import { AppShell } from './components/AppShell/AppShell'
 import { HomePage } from './Pages/HomePage/HomePage'
+import { NewTask } from './Pages/NewTask/NewTask'
 import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 
 
@@ -23,6 +24,7 @@ function App() {
       <Routes>
         <Route path="/" element={<AppShell />}>
           <Route index element={<HomePage />}/>
+          <Route path="addNewTask" element={<NewTask/>}/>
         </Route>
       </Routes>
     </Router>

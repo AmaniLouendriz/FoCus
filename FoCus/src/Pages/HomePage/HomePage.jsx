@@ -1,13 +1,17 @@
 import './HomePage.css'
 import { useEffect, useState } from 'react'
+import {useNavigate} from 'react-router-dom'
 import fcts from '../../Api'
 import {DateTime} from "luxon";
+
 
 export const HomePage = ()=>{
 
     const [user,setUser] = useState({
       email:"amani@uottawa.ca",
     })
+
+    const navigate = useNavigate();
 
     const [tasks,setTasks] = useState([]);
     // not: not completed
@@ -54,6 +58,11 @@ export const HomePage = ()=>{
       return res;
     }
 
+    const addNewTask = ()=>{
+      console.log("add new task added");
+      navigate("/addNewTask",{state:user.email});
+    }
+
     useEffect(()=>{
       const fetchTask = async()=>{
         try {
@@ -89,8 +98,8 @@ export const HomePage = ()=>{
                 {relatedTasks.length!=0 ? 
                   relatedTasks.map((task,indexTask)=>{
                     return (
-                      <div className='indTask'>
-                        <div className='d-flex flex-row statusWrapper'>
+                      <div className='indTask' key={`outerDiv1${indexTask}`}>
+                        <div className='d-flex flex-row statusWrapper' key={`innerDiv2${indexTask}`}>
                           {task.name}
                           {task.status === "completed" ? 
                           <span className='statusGreen fw-bold'>Completed</span>
@@ -105,5 +114,12 @@ export const HomePage = ()=>{
                 
               </div>)})}
           </div>
+
+          <button type="button" className="btn btn-light float-end adder" onClick={addNewTask}>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-plus" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+            </svg>
+          </button>
+
         </div>)
 }

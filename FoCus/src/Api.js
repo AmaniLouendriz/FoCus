@@ -23,6 +23,21 @@ const getTasksPerUser = async (user)=>{
     return response.data;
 }
 
+const sendDataToJson = async(data)=>{
+    let response;
+    try {
+        response = await axios.post("http://localhost:3000/tasks",data);
+    } catch(e) {
+        console.log("a poblem happened while creating the resource");
+    }
+    //console.log("in api.js, the response is: ",response);
+    if (response.status == 201) {
+        return true;
+    }
+
+    return false;
+}
+
 
 fcts.getTasksPerUserWrapper = async(user)=>{
     const data = await getTasksPerUser(user);
@@ -39,6 +54,19 @@ fcts.getTasksPerUserWrapper = async(user)=>{
     }
    // console.log("user tasks are: ",userTasks);
     return userTasks;
+}
+
+fcts.sendData= async(responses)=>{
+    // schema
+    // "id":"1",
+    // "date":"2025-03-12",
+    // "estimated_duration":"4",
+    // "actual_duration":"2",
+    // "status":"not",
+    // "user_email":"amani@uottawa.ca",
+    // "name":"make prototype front end"
+    const status = await sendDataToJson(responses);
+    return status;
 }
 
 

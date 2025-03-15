@@ -1,96 +1,141 @@
 {
-    "users":[
-        {
-            "email":"amani@uottawa.ca",
-            "pwd":"amani"
-        },
-        {
-            "email":"yugmil@uottawa.ca",
-            "pwd":"yugmil"
-        },
-        {
-            "email":"praveen@uottawa.ca",
-            "pwd":"praveen"
-        },
-        {
-            "email":"margi@uottawa.ca",
-            "pwd":"margi"
-        },
-        {
-            "email":"anay@uottawa.ca",
-            "pwd":"anay"
-        }
-    ],
-    "tasks":[
-        {
-            "id":"1",
-            "date":"2025-03-12",
-            "estimated_duration":"4",
-            "unit":"h",
-            "actual_duration":"2",
-            "status":"not",
-            "user_email":"amani@uottawa.ca",
-            "name":"make prototype front end"
-          },
-          {
-            "id":"2",
-            "date":"2025-03-12",
-            "estimated_duration":"4",
-            "unit":"h",
-            "actual_duration":"2",
-            "status":"in",
-            "user_email":"yugmil@uottawa.ca",
-            "name" :"make interviews"
-          },
-          {
-            "id":"3",
-            "date":"2025-03-09",
-            "estimated_duration":"4",
-            "unit":"h",
-            "actual_duration":"2",
-            "status":"completed",
-            "user_email":"praveen@uottawa.ca",
-            "name":"complete validation board"
-          },
-          {
-            "id":"4",
-            "date":"2025-02-10",
-            "estimated_duration":"4",
-            "unit":"h",
-            "actual_duration":"2",
-            "status":"completed",
-            "user_email":"anay@uottawa.ca",
-            "name":"complete fiscal plan"
-          },
-          {
-            "id":"5",
-            "date":"2025-02-10",
-            "estimated_duration":"4",
-            "unit":"h",
-            "actual_duration":"2",
-            "status":"completed",
-            "user_email":"margi@uottawa.ca",
-            "name" :"complete marketing plan"
-          },
-          {
-            "id":"6",
-            "date":"2025-03-12",
-            "estimated_duration":"4",
-            "unit":"h",
-            "actual_duration":"6",
-            "status":"completed",
-            "user_email":"amani@uottawa.ca",
-            "name":"add stats"
-          },
-          {
-            "id":"7",
-            "date":"2025-02-10",
-            "estimated_duration":"4",
-            "unit":"h",
-            "actual_duration":"5",
-            "status":"completed",
-            "user_email":"anay@uottawa.ca",
-            "name":"make the formatting of the doc"
-          }
-    ]
+  "users": [
+    {
+      "email": "amani@uottawa.ca",
+      "pwd": "amani",
+      "id": "814e"
+    },
+    {
+      "email": "yugmil@uottawa.ca",
+      "pwd": "yugmil",
+      "id": "acdc"
+    },
+    {
+      "email": "praveen@uottawa.ca",
+      "pwd": "praveen",
+      "id": "1594"
+    },
+    {
+      "email": "margi@uottawa.ca",
+      "pwd": "margi",
+      "id": "19b5"
+    },
+    {
+      "email": "anay@uottawa.ca",
+      "pwd": "anay",
+      "id": "40f7"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "date": "2025-03-12",
+      "estimated_duration": "4",
+      "actual_duration": "2",
+      "status": "not",
+      "user_email": "amani@uottawa.ca",
+      "name": "make prototype front end",
+      "type": "WORK",
+      "reminder": "20"
+    },
+    {
+      "id": "2",
+      "date": "2025-03-12",
+      "estimated_duration": "4",
+      "actual_duration": "",
+      "status": "in",
+      "user_email": "yugmil@uottawa.ca",
+      "name": "make interviews",
+      "type": "WORK",
+      "reminder": "20"
+    },
+    {
+      "id": "3",
+      "date": "2025-03-09",
+      "estimated_duration": "4",
+      "actual_duration": "2",
+      "status": "completed",
+      "user_email": "praveen@uottawa.ca",
+      "name": "complete validation board",
+      "type": "WORK",
+      "reminder": "20"
+    },
+    {
+      "id": "4",
+      "date": "2025-02-10",
+      "estimated_duration": "4",
+      "actual_duration": "2",
+      "status": "completed",
+      "user_email": "anay@uottawa.ca",
+      "name": "complete fiscal plan",
+      "type": "WORK",
+      "reminder": "20"
+    },
+    {
+      "id": "5",
+      "date": "2025-02-10",
+      "estimated_duration": "4",
+      "actual_duration": "2",
+      "status": "completed",
+      "user_email": "margi@uottawa.ca",
+      "name": "complete marketing plan",
+      "type": "WORK",
+      "reminder": "20"
+    },
+    {
+      "id": "6",
+      "date": "2025-03-12",
+      "estimated_duration": "4",
+      "actual_duration": "6",
+      "status": "completed",
+      "user_email": "amani@uottawa.ca",
+      "name": "add stats",
+      "type": "WORK",
+      "reminder": "20"
+    },
+    {
+      "id": "7",
+      "date": "2025-02-10",
+      "estimated_duration": "4",
+      "actual_duration": "5",
+      "status": "completed",
+      "user_email": "anay@uottawa.ca",
+      "name": "make the formatting of the doc",
+      "type": "WORK",
+      "reminder": "20"
+    },
+    {
+      "id": "1802",
+      "date": "2025-03-15",
+      "estimated_duration": "5",
+      "actual_duration": "",
+      "status": "completed",
+      "user_email": "yugmil@uottawa.ca",
+      "name": "prepare prezi",
+      "type": "WORK",
+      "reminder": "15"
+    },
+    {
+      "id": "af25",
+      "date": "2025-03-15",
+      "estimated_duration": "4",
+      "actual_duration": "",
+      "status": "in",
+      "user_email": "amani@uottawa.ca",
+      "name": "read research paper",
+      "type": "",
+      "reminder": "20"
+    },
+    {
+      "id": "230d",
+      "date": "2025-03-15",
+      "estimated_duration": "2",
+      "actual_duration": "",
+      "status": "in",
+      "user_email": "amani@uottawa.ca",
+      "name": "go camping",
+      "type": "BREAK",
+      "reminder": "10"
+    }
+  ]
 }
