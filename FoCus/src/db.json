@@ -120,7 +120,7 @@
       "date": "2025-03-15",
       "estimated_duration": "4",
       "actual_duration": "",
-      "status": "in",
+      "status": "completed",
       "user_email": "amani@uottawa.ca",
       "name": "read research paper",
       "type": "",
@@ -131,10 +131,54 @@
       "date": "2025-03-15",
       "estimated_duration": "2",
       "actual_duration": "",
-      "status": "in",
+      "status": "completed",
       "user_email": "amani@uottawa.ca",
       "name": "go camping",
       "type": "BREAK",
+      "reminder": "10"
+    },
+    {
+      "id": "e937",
+      "date": "2025-03-16",
+      "estimated_duration": "2",
+      "actual_duration": "",
+      "status": "completed",
+      "user_email": "amani@uottawa.ca",
+      "name": "do PDB5",
+      "type": "WORK",
+      "reminder": "10"
+    },
+    {
+      "id": "deff",
+      "date": "2025-03-22",
+      "estimated_duration": "",
+      "actual_duration": "",
+      "status": "completed",
+      "user_email": "amani@uottawa.ca",
+      "name": "do presentation video",
+      "type": "WORK",
+      "reminder": ""
+    },
+    {
+      "id": "23db",
+      "date": "2025-03-23",
+      "estimated_duration": "2",
+      "actual_duration": "",
+      "status": "in",
+      "user_email": "amani@uottawa.ca",
+      "name": "making a video presentation",
+      "type": "WORK",
+      "reminder": "10"
+    },
+    {
+      "id": "1837",
+      "date": "2025-03-23",
+      "estimated_duration": "2",
+      "actual_duration": "",
+      "status": "in",
+      "user_email": "amani@uottawa.ca",
+      "name": "create video",
+      "type": "WORK",
       "reminder": "10"
     }
   ]
