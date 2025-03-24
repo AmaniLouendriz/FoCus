@@ -30,7 +30,7 @@ export const AppHeader = ()=>{
                                 <a className="nav-link active" href="#">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Q/A</a>
+                                <a className="nav-link" href="/#QA">Q/A</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="#">Metrics</a>

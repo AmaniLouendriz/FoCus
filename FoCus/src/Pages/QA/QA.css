@@ -1,0 +1,11 @@
+.QADiv {
+    background-color: #E8DEDE;
+    flex: 1;
+}
+
+.accordion {
+    margin: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+}

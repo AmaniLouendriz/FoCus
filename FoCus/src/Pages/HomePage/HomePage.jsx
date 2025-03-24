@@ -296,51 +296,19 @@ export const HomePage = ()=>{
       generateWeeks(2025,2,10,7);
       let taskFound = detectIfOngoingTask(tasksFetched);
 
-      let faceLandmarker;
+      let faceLandmarker;// TODO, bad smell code
 
 
       if (taskFound != "") {
         console.log("HERE HERE");
-        startVideo();
-
-        // while (!videoReady) {
-
-        // }
-        // faceLandmarker = initializeLandmarker();
-        //  navigator.mediaDevices.getUserMedia({ video: true })
-        //   .then((stream) => {
-        //     if (videoRef.current) {
-        //       videoRef.current.srcObject = stream;
-        //     }
-        //   })
-        //   .catch((error) => console.error("Error accessing webcam:", error));
-        // try {
-        //   // Access the user's webcam
-        //   const stream = await navigator.mediaDevices.getUserMedia({ video: true });
-          
-        //   // Once stream is available, set it to the video element
-        //   if (videoRef.current) {
-        //     videoRef.current.srcObject = stream;
-        //   }
-        // } catch (error) {
-        //   console.error("Error accessing webcam:", error);
-        // }
-
-        // Start processing video once the faceLandmarker is loaded
+        //startVideo();
       }
-      // if (landmarker) {
-      //   //console.log("do we ever get here");
-      //   processVideo();
-      // }
-
-
-    },[]);
+},[]);
 
     return (
         <div className="homeDiv">
           <h4 className='greetingUser'>Hello {user.email}</h4>
           <h5 className='titlePage'>Summary of Activities</h5>
-          {/* {console.log("the weeks are:", weeks)} */}
           <div className='tasks d-flex flex-column w-50'>
             {weeks.map((week,index)=>{
               const relatedTasks = detectIfPresent(week.startDate,week.endDate,tasks);
